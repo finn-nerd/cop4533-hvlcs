@@ -4,7 +4,7 @@ def main():
     # Get the input file path from the user
     file_path = input("Enter the input file path: ")
 
-    characters = {};
+    characters = {}
 
     # Try to open the file at the file path
     try:
