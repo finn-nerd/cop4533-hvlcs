@@ -1,3 +1,4 @@
+from hvlcs import highest_value_lcs
 
 # Main program
 def main():
@@ -47,11 +48,11 @@ def main():
         return
     
     # Call our dynamic algorithm
-    final_val, subsequence = dynamic_alg(A, B, characters)
+    final_val, subsequence = highest_value_lcs(A, B, characters)
 
     # Print the max value and corresponding subsequence
-    print(f"Maximum Value of Subsequence: " + {final_val})
-    print(f"Subsequence: " + {subsequence})
+    print(f"Maximum Value of Subsequence: {final_val}")
+    print(f"Subsequence: {subsequence}")
 
     # Write the hits/misses into an output file
     o_file_path = input("Enter the output file path: ")
