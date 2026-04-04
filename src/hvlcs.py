@@ -28,11 +28,6 @@ def highest_value_lcs(A: str, B: str, v: dict):
     # Backtrack to find actual sequence
     subseq = backtrack(A, mem, v, n, m, "")
 
-    for i in range(0, n+1):
-        for j in range(0, m+1):
-            print(mem[i][j], end=" ")
-        print("")
-
     return max_val, subseq
 
 
