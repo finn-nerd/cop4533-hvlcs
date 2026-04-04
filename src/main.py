@@ -32,11 +32,6 @@ def main():
         print("Error: K = 0.")
         return
     
-    # Validate number of characters
-    if len(characters) != K:
-        print("Error: Number of characters != K.")
-        return
-    
     # Check that A only contains characters from our dict
     if not set(A).issubset(characters):
         print("Error: String A contains something outside our characters dict.")
